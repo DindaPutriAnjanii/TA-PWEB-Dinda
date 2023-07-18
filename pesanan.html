@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+    <title>Warung Makan Kehidupink</title>
+  </head>
+  <body>
+  <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="display-4"><span class="font-weight-bold">WARUNG MAKAN KEHIDUPINK</span></h1>
+          <hr>
+          <p class="lead font-weight-bold">Silahkan Pesan Menu Sesuai Keinginan Anda <br> 
+          Selamat Menikmati!</p>
+        </div>
+      </div>
+  <!-- Akhir Jumbotron -->
+
+  <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg  bg-dark">
+        <div class="container">
+        <a class="navbar-brand text-white" href="index.html"><strong>Warung</strong> Makan Kehidupink</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link mr-4" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4" href="daftar_menu.html">DAFTAR MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-4" href="pesanan.html">PESAN</a>
+            </li>
+          </ul>
+        </div>
+       </div> 
+      </nav>
+  <!-- Akhir Navbar -->
+
+      <form action="proses.php" method="post">
+        <h3 class="text-center font-weight-bold">DATA PESANAN</h3
+       <label for="nama">Nama Pembeli:</label>
+         <input type="text" id="nama" name="nama" required>
+    <br>
+      <label for="jumlah">No Meja:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" required>
+    <br>
+        <input type="checkbox" name="mkn1" value="Makaroni Rp. 20.000" checkbpx> Makaroni  Rp. 20.000 <br>
+        <input type="checkbox" name="mkn2" value="Mochi Rp. 15.000" checkbpx> Mochi Rp. 15.000 <br>
+        <input type="checkbox" name="mkn3" value="Sandwich  Rp. 10.000" checkbpx> Sandwich  Rp. 10.000 <br>
+        <input type="checkbox" name="mkn4" value="Spaghetti  Rp. 25.000" checkbpx> Spaghetti  Rp. 25.000 <br>
+        <input type="checkbox" name="mkn5" value="Sushi  Rp. 25.000" checkbpx> Sushi  Rp. 25.000 <br>
+        <input type="checkbox" name="mkn6" value="Popice  Rp. 5.0000" checkbpx> Popice  Rp. 5.000 <br>
+        <input type="checkbox" name="mkn7" value="Coca-cola  Rp. 10.000" checkbpx> Coca-cola  Rp. 10.000 <br>
+        <input type="checkbox" name="mkn8" value=" Es Buah  Rp. 8.000" checkbpx> Es Buah  Rp. 8.000 <br>
+        <input type="checkbox" name="mkn9" value="Eskrim  Rp. 5.0" checkbpx> Eskrim  Rp. 5.000 <br>
+        <input type="checkbox" name="mkn10" value="Cinamon Roll Rp. 25.000" checkbpx> Cinamon Roll Rp. 25.000 <br>
+        <input type="checkbox" name="mkn11" value="Yogurt Rp. 5.000" checkbpx> Yogurt Rp. 5.000 <br>
+        <input type="checkbox" name="mkn12" value="Cookies Rp. 15.000" checkbpx> Cookies Rp. 15.000 <br>
+        <input type="submit" name="Pilih" value="Pilih">
+        <input type="reset" name="reset" value="Reset">
+      </form>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#example').DataTable();
+      } );
+    </script>
+  </body>
+</html>
